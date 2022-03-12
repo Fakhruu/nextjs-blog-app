@@ -1,12 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Loader from '../components/Loader';
 
+import toast from 'react-hot-toast';
 export default function Home() {
+
   return (
-   <div>
-     <Loader show/>
-   </div>
+    <div>
+    <button className='rounded-full' onClick={() => toast.success('Hello World')}>
+      Hello World
+    </button>
+  </div>
   )
 }
